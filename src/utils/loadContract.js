@@ -11,7 +11,7 @@ export const loadContract = async (name, provider) => {
     try {
         deployedContract = await _contract.deployed()
     } catch {
-        console.log
+        console.error("Wrong network connected")
     }
 
     return deployedContract
